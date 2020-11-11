@@ -1,9 +1,14 @@
-meal = int(input ("Enter your meal amount: "))
-service_level = (input ("How was your service? ")
+bill_amount = int(input("How much was your bill?"))
+service = input("How was your service?").lower()
+if service == "good":
+    tip=(bill_amount*0.20)
 
-if service_level = (input (good)
+elif service == "fair":
+    tip=(bill_amount*0.15)
 
+elif service == "bad":
+    tip=(bill_amount*0.10)
+else:
+    print("find a new resturant")
 
-total_bill = meal + service_level
-
-print(f"Your bill is ${} and your service was (service_level)" )
+print(f"Your total bill was $ {bill_amount+ tip}" )
