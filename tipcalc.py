@@ -9,6 +9,6 @@ elif service == "fair":
 elif service == "bad":
     tip=(bill_amount*0.10)
 else:
-    print("find a new resturant")
+    print("find a new restaurant")
 
 print(f"Your total bill was $ {bill_amount+ tip}" )
